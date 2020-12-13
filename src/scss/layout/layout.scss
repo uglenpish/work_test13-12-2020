@@ -1,0 +1,85 @@
+*{
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+button{
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+  &:focus{
+    outline: none;
+  }
+}
+
+body{
+  margin: 0;
+  font-family: "Roboto";
+  font-weight: 400;
+  // color: #fff;
+}
+
+html{
+  font-size: rem(16px);
+  @include tablets{
+    font-size: rem(15px);
+  }
+  @include phones{
+    font-size: rem(14px);
+  }
+}
+
+
+.wrapper{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+  
+.container{
+  max-width: 1240px;
+  height: 100%;
+  margin: 0 auto;
+  width: 95%;
+}
+
+@media screen and (max-width: 768px){
+  .container{
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    max-width: 460px;
+  }
+}
+
+.subtitle{
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+}
